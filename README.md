@@ -52,6 +52,9 @@ Arrays & Hashing
 # 3. THINGS I LEARNED
 # What Python/DSA concept did I learn?
 
-# 4. COMPLEXITY
+# 4. MISTAKE/CONFUSION
+# What mistakes did I make?
+
+# 5. COMPLEXITY
 # Time: O(...)
 # Space: O(...)
