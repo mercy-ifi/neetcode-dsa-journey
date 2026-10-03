@@ -1,5 +1,13 @@
 # APPROACH:
-# 
+# 1. Initialize an empty dictionary to hold the groups of anagrams.
+# 2. Iterate through each string in the input list.
+# 3. For each string, sort the characters in the string to create a key.
+# 4. Check if the sorted string (key) is already in the dictionary.
+#    - If it is not, create a new entry in the dictionary with the sorted string
+#      as the key and an empty list as the value.
+#    - If it is, append the original string to the list corresponding to that key.
+# 5. After processing all strings, return the values of the dictionary as a list of lists,
+#    where each inner list contains strings that are anagrams of each other.
 
 # KEY INSIGHT:
 # Noticing the pattern of a unique key for each group of anagrams, this problem can 
@@ -23,8 +31,11 @@
 # solutions for problems involving grouping or categorization.
 
 # COMPLEXITY:
-# Time:
-# Space:
+# Time: O(n * k log k), where n is the number of strings and k is the maximum length of a string. 
+# This is because we sort each string, which takes O(k log k) time, and we do this for all n strings.
+# 
+# Space: O(n * k), where n is the number of strings and k is the maximum length of a string. 
+# This is because we store all the strings in the dictionary.
 
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
